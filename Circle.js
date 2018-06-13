@@ -3,10 +3,10 @@ class Circle {
         this.radius = radius;
     }
 
-    area() {
+    getArea() {
         return (Math.PI * this.radius ** 2).toFixed(1);
     }
-    perimeter() {
+    getPerimeter() {
         return (2 * Math.PI * this.radius).toFixed(1);
     }
 }
@@ -15,22 +15,22 @@ const c1 = new Circle(1);
 console.log(`c1
     radius ${c1.radius}
     Computed:
-        area ${c1.area()};
-        perimeter ${c1.perimeter()};
+        area ${c1.getArea()};
+        perimeter ${c1.getPerimeter()};
 `);
 
 const c2 = new Circle(2);
 console.log(`c2
     radius ${c2.radius}
     Computed:
-        area ${c2.area()};
-        perimeter ${c2.perimeter()};
+        area ${c2.getArea()};
+        perimeter ${c2.getPerimeter()};
 `);
 
 const c3 = new Circle(3);
 console.log(`c3
     radius ${c3.radius}
     Computed:
-        area ${c3.area()};
-        perimeter ${c3.perimeter()};
+        area ${c3.getArea()};
+        perimeter ${c3.getPerimeter()};
 `);

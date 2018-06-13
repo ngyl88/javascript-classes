@@ -1,7 +1,10 @@
 class SimpleCalculator {
-    constructor(initValue) {
-        this.value = initValue === undefined ? 0 : initValue;
+    constructor(initValue = 0) {
+        this.value = initValue;
     }
+    /*constructor(initValue) {
+        this.value = initValue === undefined ? 0 : initValue;
+    }*/
 
     add(n) {
         this.value = this.value + n;
@@ -21,11 +24,11 @@ class SimpleCalculator {
     }
 }
 
-// console.log(new SimpleCalculator(1).value);
-// console.log(new SimpleCalculator(0.5).value);
-// console.log(new SimpleCalculator(-0.5).value);
-// console.log(new SimpleCalculator().value);
+console.log(new SimpleCalculator(1).value);
+console.log(new SimpleCalculator(0.5).value);
+console.log(new SimpleCalculator(-0.5).value);
+console.log(new SimpleCalculator().value);
 
-const calculator = new SimpleCalculator();
-console.log(calculator.add(12).multiply(2).divide(2));
-console.log(new SimpleCalculator(10).add(12).multiply(2).divide(2));
+// const calculator = new SimpleCalculator();
+// console.log(calculator.add(12).multiply(2).divide(2));
+// console.log(new SimpleCalculator(10).add(12).multiply(2).divide(2));

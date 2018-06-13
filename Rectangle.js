@@ -4,11 +4,11 @@ class Rectangle {
         this.length = length;
     }
 
-    area() {
+    getArea() {
         return this.breadth * this.length;
     }
 
-    perimeter() {
+    getPerimeter() {
         return 2 * this.length + 2 * this.breadth;
     }
 }
@@ -18,8 +18,8 @@ console.log(`rect1
     Breadth ${rect1.breadth}
     Length ${rect1.length}
     Computed:
-        Area ${rect1.area()}
-        Perimeter ${rect1.perimeter()}
+        Area ${rect1.getArea()}
+        Perimeter ${rect1.getPerimeter()}
 `);
 
 const rect2 = new Rectangle(5, 10);
@@ -27,6 +27,6 @@ console.log(`rect2
     Breadth ${rect2.breadth}
     Length ${rect2.length}
     Computed:
-        Area ${rect2.area()}
-        Perimeter ${rect2.perimeter()}
+        Area ${rect2.getArea()}
+        Perimeter ${rect2.getPerimeter()}
 `);
